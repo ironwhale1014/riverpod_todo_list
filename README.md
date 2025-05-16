@@ -20,4 +20,6 @@ riverpod filter train
 4. common - layout - default_layout 만들기
 5. domain - todo.dart 만들기
 - initialMemo 만들기
-6. 
+6. TodoListService  
+- uuid: ^4.5.1 필요
+7. 
