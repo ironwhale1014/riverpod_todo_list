@@ -22,4 +22,7 @@ riverpod filter train
 - initialMemo 만들기
 6. TodoListService  
 - uuid: ^4.5.1 필요
-7. 
+7. Todo filter service 만들기
+   - enum TodoListFilter 만들기
+   - filteredTodos 만들기
+8. Home UI 구성

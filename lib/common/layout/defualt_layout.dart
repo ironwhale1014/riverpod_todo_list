@@ -17,26 +17,28 @@ class DefaultLayout extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    return Scaffold(
-      backgroundColor: backgroundColor ?? Colors.white,
-      appBar:
-          title != null
-              ? AppBar(
-                backgroundColor: Colors.white,
-                elevation: 0,
-                title: Text(
-                  title!,
-                  style: const TextStyle(
-                    fontSize: 16.0,
-                    fontWeight: FontWeight.w500,
+    return GestureDetector(
+      onTap: () => FocusScope.of(context).unfocus(),
+      child: Scaffold(
+        backgroundColor: backgroundColor ?? Colors.white,
+        appBar:
+            title != null
+                ? AppBar(
+                  backgroundColor: Colors.white,
+                  elevation: 0,
+                  title: Text(
+                    title!,
+                    style: const TextStyle(
+                      fontSize: 16.0,
+                      fontWeight: FontWeight.w500,
+                    ),
                   ),
-                ),
-                foregroundColor: Colors.black,
-              )
-              : null,
-      body: child,
-      bottomNavigationBar: bottomNavigationBar,
+                  foregroundColor: Colors.black,
+                )
+                : null,
+        body: child,
+        bottomNavigationBar: bottomNavigationBar,
+      ),
     );
   }
 }
-
