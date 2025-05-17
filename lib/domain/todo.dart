@@ -12,7 +12,7 @@ class Todo {
 }
 
 List<Todo> initialMemo = [
-  Todo(id: 'todo-0', description: 'Buy cookies'),
-  Todo(id: 'todo-1', description: 'Star Riverpod'),
-  Todo(id: 'todo-2', description: 'Have a walk'),
+  Todo(id: 'todo-1', description: 'Buy cookies'),
+  Todo(id: 'todo-2', description: 'Star Riverpod'),
+  Todo(id: 'todo-3', description: 'Have a walk'),
 ];

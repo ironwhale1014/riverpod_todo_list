@@ -13,7 +13,7 @@ class Toolbar extends ConsumerWidget {
     final TodoListFilter filter = ref.watch(todoListFilterNotifierProvider);
 
     Color? textColorFor(TodoListFilter value) {
-      return filter == value ? Colors.white : Colors.black;
+      return filter == value ? Colors.blue : Colors.black;
     }
 
     return Material(
